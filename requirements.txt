@@ -1,30 +1,30 @@
 # Core Backend Framework
-fastapi==0.109.0
-uvicorn[standard]==0.27.0
-pydantic==2.5.3
+fastapi==0.115.0
+uvicorn[standard]==0.32.0
+pydantic==2.10.3
 
 # Authentication & Security
 passlib[bcrypt]==1.7.4
 python-jose[cryptography]==3.3.0
-python-multipart==0.0.6
+python-multipart==0.0.20
 
-# Data Processing & Analysis
-pandas==2.1.4
-numpy==1.26.3
+# Data Processing & Analysis (Python 3.13 compatible)
+pandas==2.2.3
+numpy==2.1.3
 
-# Machine Learning (Lightweight - only if using ML models)
-scikit-learn==1.4.0
-xgboost==2.0.3
-joblib==1.3.2
+# Machine Learning (Python 3.13 compatible)
+scikit-learn==1.5.2
+xgboost==2.1.3
+joblib==1.4.2
 
 # HTTP & API Requests
-requests==2.31.0
+requests==2.32.3
 
 # PDF Generation
-reportlab==4.0.9
+reportlab==4.2.5
 
 # Production Server
-gunicorn==21.2.0
+gunicorn==23.0.0
 
 # NOTE: TensorFlow removed to speed up Render builds
-# Add back only if deploying LSTM models: tensorflow==2.15.0
+# Add back only if deploying LSTM models: tensorflow==2.18.0
