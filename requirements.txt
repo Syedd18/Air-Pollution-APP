@@ -2,6 +2,7 @@
 fastapi==0.115.0
 uvicorn[standard]==0.32.0
 pydantic==2.10.3
+email-validator>=2.0.0
 
 # Authentication & Security
 passlib[bcrypt]==1.7.4
@@ -25,6 +26,13 @@ reportlab==4.2.5
 
 # Production Server
 gunicorn==23.0.0
+psycopg[binary]==3.3.1
+
+# MongoDB driver (for migrations and runtime)
+pymongo==4.4.0
+dnspython==2.4.2
+# AWS SDK for backups
+boto3>=1.28.0
 
 # NOTE: TensorFlow removed to speed up Render builds
 # Add back only if deploying LSTM models: tensorflow==2.18.0
